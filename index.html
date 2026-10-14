@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outubro Rosa — Salvador 2026 🎀</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        rosa: {
+                            50: '#fef2f7',
+                            100: '#fce7f0',
+                            200: '#f9cfe1',
+                            300: '#f4a7c8',
+                            400: '#ed7aaa',
+                            500: '#e3548f',
+                            600: '#d13775',
+                            700: '#b4255d',
+                        },
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-shadow { text-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+            .card-elevado { box-shadow: 0 8px 30px rgba(227, 84, 143, 0.12); }
+            .ribbon-symbol { filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1)); }
+        }
+    </style>
+</head>
+<body class="bg-rosa-50 font-sans text-gray-800 min-h-screen">
+    <!-- Cabeçalho -->
+    <header class="bg-gradient-to-r from-rosa-500 to-rosa-600 text-white">
+        <div class="container mx-auto px-4 py-6 md:py-10">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                <div class="text-center md:text-left">
+                    <h1 class="text-[clamp(1.8rem,5vw,3rem)] font-bold leading-tight">
+                        🎀 Outubro Rosa
+                    </h1>
+                    <p class="text-rosa-100 text-lg mt-2">Salvador — Bahia | 2026</p>
+                    <p class="text-rosa-50 mt-1">Diagnóstico precoce salva vidas! 💗</p>
+                </div>
+                <div class="w-32 h-32 md:w-40 md:h-40 flex items-center justify-center">
+                    <!-- Símbolo Universal do Outubro Rosa -->
+                    <svg viewBox="0 0 100 100" class="w-full h-full ribbon-symbol">
+                        <circle cx="50" cy="50" r="45" fill="white" fill-opacity="0.2"/>
+                        <path d="M50 15 C60 5 80 15 80 35 C80 55 50 85 50 85 C50 85 20 55 20 35 C20 15 40 5 50 15 Z" fill="white" opacity="0.9"/>
+                        <path d="M50 25 C57 18 70 25 70 40 C70 55 50 75 50 75 C50 75 30 55 30 40 C30 25 43 18 50 25 Z" fill="#e3548f" opacity="0.95"/>
+                        <path d="M50 35 L50 65 M42 42 L50 35 L58 42" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navegação -->
+    <nav class="sticky top-0 bg-white shadow-md z-50">
+        <div class="container mx-auto px-4 py-3 overflow-x-auto">
+            <div class="flex gap-3 whitespace-nowrap text-sm font-medium">
+                <a href="#sobre" class="px-3 py-2 rounded-full bg-rosa-100 hover:bg-rosa-200 transition">O que é</a>
+                <a href="#agendar" class="px-3 py-2 rounded-full bg-rosa-100 hover:bg-rosa-200 transition">Agendar Exame</a>
+                <a href="#locais" class="px-3 py-2 rounded-full bg-rosa-100 hover:bg-rosa-200 transition">Locais & Datas</a>
+                <a href="#programacao" class="px-3 py-2 rounded-full bg-rosa-100 hover:bg-rosa-200 transition">Programação</a>
+                <a href="#sintomas" class="px-3 py-2 rounded-full bg-rosa-100 hover:bg-rosa-200 transition">Prevenção</a>
+                <a href="#contato" class="px-3 py-2 rounded-full bg-rosa-100 hover:bg-rosa-200 transition">Contato</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-4 py-8">
+        <!-- Sobre a Campanha -->
+        <section id="sobre" class="mb-16">
+            <div class="bg-white rounded-3xl p-6 md:p-8 card-elevado">
+                <h2 class="text-2xl font-bold text-rosa-600 mb-4 flex items-center gap-2">
+                    <i class="fa fa-heart"></i> Sobre o Outubro Rosa
+                </h2>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="md:col-span-2 space-y-4 text-gray-700">
+                        <p>O <strong>Outubro Rosa</strong> é a campanha mundial de conscientização sobre a prevenção e o diagnóstico precoce do câncer de mama e do câncer do colo do útero. Em Salvador, a ação é coordenada pela <strong>Sesab</strong> e pela <strong>Prefeitura Municipal</strong>, com oferta de <strong>40.000 mamografias gratuitas</strong> durante todo o mês de outubro de 2026. 🎀</p>
+                        
+                        <div class="bg-rosa-50 p-4 rounded-xl border-l-4 border-rosa-500">
+                            <p class="font-semibold text-rosa-700">Quem pode fazer a mamografia gratuita?</p>
+                            <ul class="mt-2 space-y-1 text-sm">
+                                <li>✅ Mulheres com idade entre <strong>40 e 74 anos</strong></li>
+                                <li>✅ Que não tenham feito o exame há <strong>mais de 1 ano</strong></li>
+                                <li>✅ Sem cirurgia prévia nas mamas</li>
+                                <li>✅ <strong>Não é necessária requisição médica</strong></li>
+                            </ul>
+                        </div>
+                        
+                        <p>📋 Levar no dia: <strong>RG, CPF, Cartão do SUS e comprovante de residência</strong>.</p>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <!-- Símbolo Laço Rosa - Seção Sobre -->
+                        <svg viewBox="0 0 100 100" class="w-full max-w-xs ribbon-symbol">
+                            <path d="M50 15 C60 5 80 15 80 35 C80 55 50 85 50 85 C50 85 20 55 20 35 C20 15 40 5 50 15 Z" fill="#e3548f" opacity="0.95"/>
+                            <path d="M50 25 C57 18 70 25 70 40 C70 55 50 75 50 75 C50 75 30 55 30 40 C30 25 43 18 50 25 Z" fill="white" opacity="0.95"/>
+                            <path d="M50 35 L50 65 M42 42 L50 35 L58 42" stroke="#e3548f" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Como Agendar -->
+        <section id="agendar" class="mb-16">
+            <div class="bg-white rounded-3xl p-6 md:p-8 card-elevado">
+                <h2 class="text-2xl font-bold text-rosa-600 mb-6 flex items-center gap-2">
+                    <i class="fa fa-calendar-check-o"></i> Como Agendar sua Mamografia
+                </h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-rosa-50 p-5 rounded-2xl border-2 border-rosa-200 hover:border-rosa-400 transition">
+                        <h3 class="font-bold text-lg text-rosa-700 mb-3">
+                            <i class="fa fa-globe mr-2"></i> Pela Internet
+                        </h3>
+                        <p class="mb-3">Acesse o portal oficial e escolha dia, local e turno:</p>
+                        <a href="https://ba.gov.br" target="_blank" rel="noopener" 
+                           class="inline-block bg-rosa-500 hover:bg-rosa-600 text-white font-bold py-3 px-5 rounded-xl transition w-full text-center mb-2">
+                            <i class="fa fa-external-link mr-2"></i> Portal Oficial — ba.gov.br
+                        </a>
+                        <a href="http://outubrorosa.saude.ba.gov.br" target="_blank" rel="noopener" 
+                           class="inline-block bg-rosa-100 hover:bg-rosa-200 text-rosa-700 font-medium py-2 px-4 rounded-lg transition w-full text-center text-sm">
+                            ou diretamente: outubrorosa.saude.ba.gov.br
+                        </a>
+                    </div>
+                    <div class="bg-rosa-50 p-5 rounded-2xl border-2 border-rosa-200 hover:border-rosa-400 transition">
+                        <h3 class="font-bold text-lg text-rosa-700 mb-3">
+                            <i class="fa fa-map-marker mr-2"></i> Presencialmente
+                        </h3>
+                        <p class="mb-3">Atendimento das 12h às 17h:</p>
+                        <ul class="space-y-2">
+                            <li class="flex items-start gap-2">
+                                <i class="fa fa-subway text-rosa-500 mt-1"></i>
+                                <span><strong>Estação Acesso Norte</strong> — Metrô</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa fa-subway text-rosa-500 mt-1"></i>
+                                <span><strong>Estação Mussurunga</strong> — Metrô</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa fa-train text-rosa-500 mt-1"></i>
+                                <span><strong>Estação Calçada</strong> — VLT</span>
+                            </li>
+                        </ul>
+                        <p class="mt-3 text-sm text-gray-600">Também na Estação da Lapa, conforme cronograma.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Locais e Datas -->
+        <section id="locais" class="mb-16">
+            <div class="bg-white rounded-3xl p-6 md:p-8 card-elevado">
+                <h2 class="text-2xl font-bold text-rosa-600 mb-6 flex items-center gap-2">
+                    <i class="fa fa-map-marker"></i> Locais de Atendimento — Salvador
+                </h2>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-sm">
+                        <thead>
+                            <tr class="bg-rosa-100 text-left">
+                                <th class="p-3 rounded-tl-xl">📍 Local</th>
+                                <th class="p-3">📅 Período</th>
+                                <th class="p-3 rounded-tr-xl">ℹ️ Observação</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-rosa-100">
+                            <tr class="bg-rosa-50/50">
+                                <td class="p-3 font-medium">Arena Fonte Nova</td>
+                                <td class="p-3 font-semibold text-rosa-600">1º e 2 de outubro</td>
+                                <td class="p-3">Abertura oficial — Feira da Saúde</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 font-medium">UNEB (Campus Cabula)</td>
+                                <td class="p-3 font-semibold text-rosa-600">5 a 31 de outubro</td>
+                                <td class="p-3">Unidade Móvel</td>
+                            </tr>
+                            <tr class="bg-rosa-50/50">
+                                <td class="p-3 font-medium">Mansão do Caminho</td>
+                                <td class="p-3 font-semibold text-rosa-600">5 a 31 de outubro</td>
+                                <td class="p-3">Unidade Móvel</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 font-medium">Atacadão de Cajazeiras</td>
+                                <td class="p-3 font-semibold text-rosa-600">5 a 31 de outubro</td>
+                                <td class="p-3">Unidade Móvel</td>
+                            </tr>
+                            <tr class="bg-rosa-50/50">
+                                <td class="p-3 font-medium">Policlínica de Escada</td>
+                                <td class="p-3 font-semibold text-rosa-600">5 a 31 de outubro</td>
+                                <td class="p-3">Unidade Móvel</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 font-medium">Salvador Norte Shopping</td>
+                                <td class="p-3 font-semibold text-rosa-600">2 a 24 de outubro</td>
+                                <td class="p-3">Unidade Móvel</td>
+                            </tr>
+                            <tr class="bg-rosa-50/50">
+                                <td class="p-3 font-medium">CICAN — Centro Estadual de Oncologia</td>
+                                <td class="p-3 font-semibold text-rosa-600">2 a 24 de outubro</td>
+                                <td class="p-3">Unidade fixa</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 font-medium">Lar Harmonia</td>
+                                <td class="p-3 font-semibold text-rosa-600">5 a 10 de outubro</td>
+                                <td class="p-3">Período específico</td>
+                            </tr>
+                            <tr class="bg-rosa-50/50">
+                                <td class="p-3 font-medium">Hospital Eládio Lasserre</td>
+                                <td class="p-3 font-semibold text-rosa-600">5 a 17 de outubro</td>
+                                <td class="p-3">Período específico</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 font-medium">PAF-UFBA</td>
+                                <td class="p-3 font-semibold text-rosa-600">13 a 24 de outubro</td>
+                                <td class="p-3">Período específico</td>
+                            </tr>
+                            <tr class="bg-rosa-50/50">
+                                <td class="p-3 font-medium">Colégio Estadual Marcílio Dias</td>
+                                <td class="p-3 font-semibold text-rosa-600">19 a 22 de outubro</td>
+                                <td class="p-3">Período específico</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 font-medium">Sesab (Sede)</td>
+                                <td class="p-3 font-semibold text-rosa-600">26 a 31 de outubro</td>
+                                <td class="p-3">Unidade Móvel</td>
+                            </tr>
+                            <tr class="bg-rosa-50/50">
+                                <td class="p-3 font-medium">Casa da Mulher Brasileira</td>
+                                <td class="p-3 font-semibold text-rosa-600">26 a 31 de outubro</td>
+                                <td class="p-3">Unidade Móvel</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 font-medium">Hospital Ana Nery</td>
+                                <td class="p-3 font-semibold text-rosa-600">26 a 31 de outubro</td>
+                                <td class="p-3">Unidade Móvel</td>
+                            </tr>
+                            <tr class="bg-rosa-50/50">
+                                <td class="p-3 font-medium">Unidade Móvel Sesc — Barris (Ferreira Costa)</td>
+                                <td class="p-3 font-semibold text-rosa-600">5 a 30 de outubro</td>
+                                <td class="p-3">Mamografia + Preventivo | 8h–12h / 13h–17h</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Programação Especial -->
+        <section id="programacao" class="mb-16">
+            <div class="bg-white rounded-3xl p-6 md:p-8 card-elevado">
+                <h2 class="text-2xl font-bold text-rosa-600 mb-6 flex items-center gap-2">
+                    <i class="fa fa-calendar"></i> Programação Especial
+                </h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="border border-rosa-200 rounded-2xl p-5 hover:border-rosa-400 transition">
+                        <p class="text-rosa-600 font-bold">📅 1º e 2 de outubro</p>
+                        <h3 class="font-bold text-lg mt-1">Feira da Saúde — Abertura Oficial</h3>
+                        <p class="text-gray-600 mt-2">📍 Arena Fonte Nova</p>
+                        <p class="mt-2">Mamografia, consulta com mastologista, ginecologia, preventivo, nutrição — 1.220 vagas por dia. Acolhimento e orientação da SPM-BA</p>
+                    </div>
+                    <div class="border border-rosa-200 rounded-2xl p-5 hover:border-rosa-400 transition">
+                        <p class="text-rosa-600 font-bold">📅 9 de outubro</p>
+                        <h3 class="font-bold text-lg mt-1">Dia D — Multicentro Carlos Gomes</h3>
+                        <p class="text-gray-600 mt-2">📍 Multicentro Carlos Gomes</p>
+                        <p class="mt-2">Exame preventivo, testes rápidos, atendimento multiprofissional, show com Danniel Vieira. Apresentar documento com foto e comprovante de residência</p>
+                    </div>
+                    <div class="border border-rosa-200 rounded-2xl p-5 hover:border-rosa-400 transition">
+                        <p class="text-rosa-600 font-bold">📅 17 de outubro</p>
+                        <h3 class="font-bold text-lg mt-1">Dia D — Multicentro de Amaralina</h3>
+                        <p class="text-gray-600 mt-2">📍 Multicentro de Amaralina</p>
+                        <p class="mt-2">Palestras, atendimentos, serviços de saúde e mobilização com a comunidade</p>
+                    </div>
+                    <div class="border border-rosa-200 rounded-2xl p-5 hover:border-rosa-400 transition">
+                        <p class="text-rosa-600 font-bold">📅 19 de outubro | 8h às 16h</p>
+                        <h3 class="font-bold text-lg mt-1">Dia D em toda a cidade</h3>
+                        <p class="text-gray-600 mt-2">📍 +100 unidades de saúde de Salvador</p>
+                        <p class="mt-2">Consultas, exames e orientações. Atendimento também por demanda aberta — sem agendamento prévio! Procure a unidade mais próxima</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Prevenção e Sinais de Alerta -->
+        <section id="sintomas" class="mb-16">
+            <div class="bg-white rounded-3xl p-6 md:p-8 card-elevado">
+                <h2 class="text-2xl font-bold text-rosa-600 mb-6 flex items-center gap-2">
+                    <i class="fa fa-heartbeat"></i> Prevenção e Sinais de Alerta
+                </h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="font-bold text-xl text-rosa-700 mb-4">🔍 Sinais que merecem atenção</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start gap-3">
+                                <span class="text-rosa-500 font-bold">●</span>
+                                <span>Nódulo (caroço) na mama ou na axila, duro e geralmente sem dor</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-rosa-500 font-bold">●</span>
+                                <span>Alteração no formato ou tamanho da mama</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-rosa-500 font-bold">●</span>
+                                <span>Pele avermelhada, enrugada ou com "casca de laranja"</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-rosa-500 font-bold">●</span>
+                                <span>Saída de líquido pelo mamilo, especialmente com sangue</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-rosa-500 font-bold">●</span>
+                                <span>Retração do mamilo ou dor localizada persistente</span>
+                            </li>
+                        </ul>
+                        <p class="mt-4 text-rosa-600 font-medium">👉 Percebeu algum desses sinais? Procure a unidade de saúde mais próxima!</p>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-xl text-rosa-700 mb-4">💗 Recomendações</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start gap-3">
+                                <i class="fa fa-check-circle text-green-500 mt-1"></i>
+                                <span><strong>Mamografia:</strong> a cada 1 ou 2 anos para mulheres de 40 a 69 anos</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa fa-check-circle text-green-500 mt-1"></i>
+                                <span><strong>Exame preventivo (Papanicolau):</strong> periodicidade conforme orientação médica</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa fa-check-circle text-green-500 mt-1"></i>
+                                <span>Manter peso saudável, praticar atividade física e alimentação equilibrada</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa fa-check-circle text-green-500 mt-1"></i>
+                                <span>Evitar consumo de álcool e tabaco</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa fa-check-circle text-green-500 mt-1"></i>
+                                <span>Conhecer seu corpo e relatar qualquer alteração ao médico</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Links Úteis e Contato -->
+        <section id="contato" class="mb-10">
+            <div class="bg-white rounded-3xl p-6 md:p-8 card-elevado">
+                <h2 class="text-2xl font-bold text-rosa-600 mb-6 flex items-center gap-2">
+                    <i class="fa fa-link"></i> Links Úteis & Contato
+                </h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="space-y-3">
+                        <a href="https://ba.gov.br" target="_blank" rel="noopener" 
+                           class="block p-4 bg-rosa-50 hover:bg-rosa-100 rounded-xl transition">
+                            <span class="font-bold">🏛️ Portal do Governo da Bahia</span>
+                            <span class="block text-sm text-gray-500 mt-1">ba.gov.br — Agendamento e notícias</span>
+                        </a>
+                        <a href="https://salvador.ba.gov.br" target="_blank" rel="noopener" 
+                           class="block p-4 bg-rosa-50 hover:bg-rosa-100 rounded-xl transition">
+                            <span class="font-bold">🏙️ Prefeitura de Salvador</span>
+                            <span class="block text-sm text-gray-500 mt-1">salvador.ba.gov.br — Ações municipais</span>
+                        </a>
+                        <a href="https://saude.salvador.ba.gov.br" target="_blank" rel="noopener" 
+                           class="block p-4 bg-rosa-50 hover:bg-rosa-100 rounded-xl transition">
+                            <span class="font-bold">🏥 Secretaria Municipal de Saúde</span>
+                            <span class="block text-sm text-gray-500 mt-1">saude.salvador.ba.gov.br — Unidades e Dia D</span>
+                        </a>
+                        <a href="https://www.inca.gov.br" target="_blank" rel="noopener" 
+                           class="block p-4 bg-rosa-50 hover:bg-rosa-100 rounded-xl transition">
+                            <span class="font-bold">📚 INCA — Instituto Nacional de Câncer</span>
+                            <span class="block text-sm text-gray-500 mt-1">Informações oficiais e diretrizes</span>
+                        </a>
+                    </div>
+                    <div class="bg-rosa-50 p-5 rounded-2xl">
+                        <h3 class="font-bold text-lg text-rosa-700 mb-3">📞 Contato & Emergência</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-center gap-3">
+                                <span class="bg-rosa-500 text-white w-8 h-8 flex items-center justify-center rounded-full">📞</span>
+                                <div>
+                                    <span class="font-bold">Disque Saúde:</span>
+                                    <span class="ml-2">136</span>
+                                </div>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="bg-rosa-500 text-white w-8 h-8 flex items-center justify-center rounded-full">👩</span>
+                                <div>
+                                    <span class="font-bold">Central de Atendimento à Mulher:</span>
+                                    <span class="ml-2">180</span>
+                                </div>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="bg-rosa-500 text-white w-8 h-8 flex items-center justify-center rounded-full">🚑</span>
+                                <div>
+                                    <span class="font-bold">Emergência:</span>
+                                    <span class="ml-2">192</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="mt-5 pt-4 border-t border-rosa-200">
+                            <p class="text-sm text-gray-600">
+                                <strong>Fontes:</strong> Sesab/Governo da Bahia, Prefeitura de Salvador, INCA<br>
+                                <strong>Atualizado em:</strong> 14 de outubro de 2026
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-rosa-600 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-xl font-bold mb-2">🎀 Outubro Rosa — Salvador 2026</p>
+            <p class="text-rosa-100 mb-4">Diagnóstico precoce salva vidas. Compartilhe essa informação! 💗</p>
+            <div class="bg-rosa-500/40 rounded-xl p-4 mb-4 max-w-md mx-auto">
+                <p class="font-semibold text-lg">📌 Dúvidas?</p>
+                <p class="text-xl font-bold mt-1">Procure a Assistente Social Mirela Cruz</p>
+            </div>
+            <p class="text-sm text-rosa-200">
+                Acesse pelo QR Code ou compartilhe o link com quem você ama
+            </p>
+        </div>
+    </footer>
+
+    <!-- Botão voltar ao topo -->
+    <button id="topoBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})" 
+            class="fixed bottom-6 right-6 bg-rosa-500 hover:bg-rosa-600 text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center transition opacity-0 invisible">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+
+    <script>
+        const btn = document.getElementById('topoBtn');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 400) {
+                btn.classList.remove('opacity-0', 'invisible');
+                btn.classList.add('opacity-100', 'visible');
+            } else {
+                btn.classList.add('opacity-0', 'invisible');
+                btn.classList.remove('opacity-100', 'visible');
+            }
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(link => {
+            link.addEventListener('click', e => {
+                e.preventDefault();
+                const alvo = document.querySelector(link.getAttribute('href'));
+                if (alvo) {
+                    alvo.scrollIntoView({behavior: 'smooth', block: 'start'});
+                }
+            });
+        });
+    </script>
+</body>
+</html>
